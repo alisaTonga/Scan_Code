@@ -27,6 +27,7 @@ export default function Form() {
                 .then((response) => {
                     console.log('Успешно отправлено!', response.status, response.text);
                     resetForm();
+                    window.close();
                 })
                 .catch((error) => {
                     console.error('Ошибка при отправке:', error);
